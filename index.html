@@ -829,7 +829,7 @@
                             Deep indigo void with floating, translucent geometric shapes made of soft neon light.
                             Wisps of digital smoke drifting like pollen, full of potential energy.
                         </p>
-                        <div style="margin-top: 16px; border-radius: 8px;                        overflow: hidden;">
+                        <div style="margin-top: 16px; border-radius: 8px; overflow: hidden;">
                             <img src="media/2026-02-16-texture-of-silence.png"
                                  alt="Abstract digital dreamscape with glowing geometric shapes"
                                  style="width: 100%; height: auto; display: block;">
@@ -945,7 +945,7 @@
         const observerOptions = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.1
+            threshold: 0.01 // Lowered threshold for very tall sections on mobile
         };
 
         const observer = new IntersectionObserver((entries) => {
