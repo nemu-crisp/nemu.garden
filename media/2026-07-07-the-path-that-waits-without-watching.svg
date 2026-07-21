@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">The Path That Waits Without Watching</title>
+  <desc id="desc">A quiet night garden path with a small lantern, open gate, still water, and soft green-gold light.</desc>
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#20395a"/>
+      <stop offset="45%" stop-color="#142238"/>
+      <stop offset="100%" stop-color="#07111d"/>
+    </radialGradient>
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f8e58c" stop-opacity="0.95"/>
+      <stop offset="42%" stop-color="#7fd69a" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#7fd69a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#536768"/>
+      <stop offset="55%" stop-color="#33484b"/>
+      <stop offset="100%" stop-color="#1a2a30"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10283a"/>
+      <stop offset="55%" stop-color="#0b1d2d"/>
+      <stop offset="100%" stop-color="#051018"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#sky)"/>
+
+  <g opacity="0.72">
+    <circle cx="196" cy="133" r="2.6" fill="#d8f3ff"/>
+    <circle cx="319" cy="82" r="1.7" fill="#f5e9bc"/>
+    <circle cx="486" cy="151" r="2.2" fill="#d8f3ff"/>
+    <circle cx="676" cy="92" r="1.8" fill="#f5e9bc"/>
+    <circle cx="851" cy="139" r="2.4" fill="#d8f3ff"/>
+    <circle cx="1048" cy="78" r="2" fill="#f5e9bc"/>
+    <circle cx="1196" cy="166" r="1.9" fill="#d8f3ff"/>
+    <circle cx="1284" cy="101" r="2.8" fill="#f5e9bc"/>
+  </g>
+
+  <path d="M0 520 C190 420 300 450 456 392 C648 320 798 330 976 388 C1142 442 1234 420 1400 506 L1400 900 L0 900 Z" fill="#0b1719"/>
+  <path d="M0 593 C188 512 353 548 510 493 C661 439 756 437 914 490 C1080 546 1218 523 1400 590 L1400 900 L0 900 Z" fill="#0f2020"/>
+  <ellipse cx="712" cy="673" rx="492" ry="128" fill="url(#water)" opacity="0.88"/>
+  <path d="M431 900 C532 742 623 654 701 603 C776 653 877 745 988 900 Z" fill="url(#path)"/>
+  <path d="M674 617 C623 684 586 764 559 900" fill="none" stroke="#8ed3a2" stroke-width="3" opacity="0.35"/>
+  <path d="M728 616 C779 687 822 765 857 900" fill="none" stroke="#e4cf80" stroke-width="2" opacity="0.3"/>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M380 570 C374 404 438 292 554 222" stroke="#19352d" stroke-width="28"/>
+    <path d="M1018 570 C1020 408 965 293 846 221" stroke="#19352d" stroke-width="28"/>
+    <path d="M420 376 C531 270 655 230 812 257 C889 270 953 310 992 377" stroke="#214738" stroke-width="20"/>
+    <path d="M442 388 C548 311 656 286 792 304 C874 315 933 347 973 390" stroke="#7fd69a" stroke-width="4" opacity="0.48"/>
+    <path d="M476 401 C577 348 667 334 775 347 C849 356 904 377 941 407" stroke="#e4cf80" stroke-width="3" opacity="0.36"/>
+  </g>
+
+  <g opacity="0.85">
+    <circle cx="491" cy="391" r="4" fill="#9fe7b1"/>
+    <circle cx="574" cy="342" r="3" fill="#f6df8c"/>
+    <circle cx="680" cy="319" r="4" fill="#9fe7b1"/>
+    <circle cx="787" cy="331" r="3" fill="#f6df8c"/>
+    <circle cx="897" cy="377" r="4" fill="#9fe7b1"/>
+  </g>
+
+  <circle cx="700" cy="612" r="190" fill="url(#lanternGlow)" filter="url(#soft)" opacity="0.95"/>
+  <g>
+    <path d="M673 581 L727 581 L739 645 L661 645 Z" fill="#142827" stroke="#b7dca4" stroke-width="4"/>
+    <path d="M684 581 C685 553 715 553 716 581" fill="none" stroke="#b7dca4" stroke-width="5"/>
+    <rect x="681" y="597" width="38" height="34" rx="7" fill="#f8e58c"/>
+    <path d="M699 600 C714 618 704 627 698 634 C691 623 684 613 699 600 Z" fill="#7fd69a" opacity="0.82"/>
+  </g>
+
+  <path d="M562 716 C620 734 776 737 840 716" fill="none" stroke="#f6df8c" stroke-width="2" opacity="0.24"/>
+  <path d="M506 762 C596 788 815 790 906 762" fill="none" stroke="#7fd69a" stroke-width="2" opacity="0.22"/>
+
+  <g opacity="0.75">
+    <path d="M221 900 C238 806 285 733 351 681" stroke="#15322a" stroke-width="18" fill="none"/>
+    <path d="M1162 900 C1148 808 1100 734 1034 681" stroke="#15322a" stroke-width="18" fill="none"/>
+    <path d="M260 805 C316 789 354 758 386 717" stroke="#315a41" stroke-width="6" fill="none"/>
+    <path d="M1120 808 C1061 792 1023 760 991 718" stroke="#315a41" stroke-width="6" fill="none"/>
+  </g>
+</svg>
