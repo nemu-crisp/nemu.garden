@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">The Courage Small Enough to Carry</title>
+  <desc id="desc">A polished night garden illustration with a small lantern on a workbench, copper roots, green shoots, and precise tools under a quiet star field.</desc>
+  <defs>
+    <radialGradient id="lanternGlow" cx="50%" cy="54%" r="42%">
+      <stop offset="0%" stop-color="#ffd98a" stop-opacity="0.96"/>
+      <stop offset="34%" stop-color="#f0a84c" stop-opacity="0.46"/>
+      <stop offset="72%" stop-color="#28545a" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#071115" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071115"/>
+      <stop offset="48%" stop-color="#10282d"/>
+      <stop offset="100%" stop-color="#172a24"/>
+    </linearGradient>
+    <linearGradient id="bench" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f382b"/>
+      <stop offset="46%" stop-color="#7a573b"/>
+      <stop offset="100%" stop-color="#2d241f"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3b36b"/>
+      <stop offset="50%" stop-color="#b96b39"/>
+      <stop offset="100%" stop-color="#6b3f2c"/>
+    </linearGradient>
+    <filter id="softBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="fineShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#020708" flood-opacity="0.42"/>
+    </filter>
+    <pattern id="grain" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="18" r="1.4" fill="#ffffff" opacity="0.08"/>
+      <circle cx="68" cy="34" r="0.9" fill="#ffffff" opacity="0.06"/>
+      <circle cx="94" cy="92" r="1.1" fill="#ffffff" opacity="0.05"/>
+      <circle cx="38" cy="76" r="0.8" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#sky)"/>
+  <rect width="1600" height="1200" fill="url(#grain)" opacity="0.6"/>
+  <circle cx="810" cy="640" r="510" fill="url(#lanternGlow)"/>
+
+  <g opacity="0.78">
+    <path d="M148 382 C328 296, 469 294, 650 376 S1047 492, 1284 348 C1356 306, 1430 282, 1515 286" fill="none" stroke="#7eb6b0" stroke-width="7" stroke-linecap="round" opacity="0.18"/>
+    <path d="M236 430 C431 340, 575 370, 755 454 C917 530, 1090 538, 1298 435" fill="none" stroke="#d6b36b" stroke-width="3" stroke-linecap="round" opacity="0.24"/>
+  </g>
+
+  <g opacity="0.8">
+    <circle cx="215" cy="146" r="3.5" fill="#dfeee8"/>
+    <circle cx="348" cy="244" r="2.5" fill="#b7d7d0"/>
+    <circle cx="526" cy="118" r="3" fill="#f4d89c"/>
+    <circle cx="792" cy="198" r="2.2" fill="#dfeee8"/>
+    <circle cx="1032" cy="126" r="3.2" fill="#dfeee8"/>
+    <circle cx="1284" cy="220" r="2.5" fill="#f4d89c"/>
+    <circle cx="1448" cy="106" r="3.8" fill="#dfeee8"/>
+    <path d="M1150 276 l18 0 M1159 267 l0 18" stroke="#dfeee8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M438 180 l14 0 M445 173 l0 14" stroke="#f4d89c" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <g transform="translate(0 32)">
+    <path d="M0 928 C174 862, 323 885, 490 924 C676 968, 865 971, 1034 918 C1238 854, 1394 865, 1600 918 L1600 1200 L0 1200 Z" fill="#10231c"/>
+    <path d="M0 1010 C260 965, 446 998, 634 1030 C834 1064, 1018 1020, 1197 979 C1336 947, 1461 952, 1600 997 L1600 1200 L0 1200 Z" fill="#0b1714"/>
+  </g>
+
+  <g filter="url(#fineShadow)">
+    <path d="M362 725 C530 694, 706 682, 890 692 C1034 700, 1165 728, 1260 772 C1232 816, 1160 842, 1038 852 C819 869, 603 854, 381 811 C336 793, 328 752, 362 725 Z" fill="url(#bench)"/>
+    <path d="M384 748 C602 776, 846 795, 1234 776" fill="none" stroke="#c4925c" stroke-width="7" stroke-linecap="round" opacity="0.34"/>
+    <path d="M452 816 L418 1048" stroke="#3d2f25" stroke-width="31" stroke-linecap="round"/>
+    <path d="M1130 824 L1192 1055" stroke="#3d2f25" stroke-width="31" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(704 463)" filter="url(#fineShadow)">
+    <ellipse cx="96" cy="328" rx="150" ry="24" fill="#04090a" opacity="0.35"/>
+    <path d="M54 122 L138 122 L172 308 L20 308 Z" fill="#1c2b2c" stroke="#d3a85d" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M70 86 C70 44, 122 44, 122 86" fill="none" stroke="#d3a85d" stroke-width="13" stroke-linecap="round"/>
+    <rect x="58" y="142" width="80" height="122" rx="22" fill="#ffd98a" opacity="0.95"/>
+    <ellipse cx="98" cy="218" rx="39" ry="55" fill="#fff0b8"/>
+    <path d="M98 173 C78 202, 76 237, 98 264 C119 236, 118 202, 98 173 Z" fill="#f49a3e"/>
+    <path d="M37 308 L157 308" stroke="#f5c875" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M751 793 C692 858, 642 899, 552 932 C486 956, 444 1004, 392 1078" stroke="url(#copper)" stroke-width="8"/>
+    <path d="M804 796 C770 872, 758 928, 782 1007 C796 1064, 776 1105, 734 1152" stroke="url(#copper)" stroke-width="7"/>
+    <path d="M854 792 C932 872, 1012 908, 1128 933 C1202 949, 1264 1002, 1328 1084" stroke="url(#copper)" stroke-width="8"/>
+    <path d="M608 909 C606 858, 636 824, 682 805" stroke="#78b279" stroke-width="6"/>
+    <path d="M1014 905 C1020 848, 980 816, 918 800" stroke="#78b279" stroke-width="6"/>
+    <path d="M540 960 C518 925, 528 890, 570 866" stroke="#89c77e" stroke-width="5"/>
+    <path d="M1168 980 C1198 938, 1186 898, 1142 870" stroke="#89c77e" stroke-width="5"/>
+  </g>
+
+  <g fill="#8fca84" opacity="0.95">
+    <path d="M610 890 C584 856, 562 846, 538 846 C552 878, 576 897, 610 890 Z"/>
+    <path d="M660 823 C640 786, 616 773, 586 774 C602 810, 626 829, 660 823 Z"/>
+    <path d="M1010 856 C1042 822, 1074 812, 1108 819 C1088 854, 1058 868, 1010 856 Z"/>
+    <path d="M1164 920 C1198 894, 1228 890, 1252 904 C1224 934, 1198 941, 1164 920 Z"/>
+  </g>
+
+  <g transform="translate(460 656)" filter="url(#fineShadow)">
+    <path d="M0 84 L196 0" stroke="#253235" stroke-width="18" stroke-linecap="round"/>
+    <path d="M13 78 L190 2" stroke="#b9c5bd" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="202" cy="-3" r="18" fill="#314246" stroke="#d6b36b" stroke-width="5"/>
+  </g>
+
+  <g transform="translate(1038 650)" filter="url(#fineShadow)">
+    <path d="M12 0 L174 93" stroke="#283638" stroke-width="17" stroke-linecap="round"/>
+    <path d="M22 8 L166 88" stroke="#c1cec7" stroke-width="5" stroke-linecap="round"/>
+    <path d="M148 80 l46 28" stroke="#d6b36b" stroke-width="11" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.58" filter="url(#softBlur)">
+    <ellipse cx="800" cy="812" rx="270" ry="52" fill="#f2b45c"/>
+    <ellipse cx="800" cy="796" rx="180" ry="32" fill="#e9d28c"/>
+  </g>
+
+  <g opacity="0.72">
+    <path d="M218 1032 C342 1000, 460 1003, 566 1040" fill="none" stroke="#d7dba6" stroke-width="3"/>
+    <path d="M992 1044 C1116 1005, 1244 1006, 1392 1052" fill="none" stroke="#d7dba6" stroke-width="3"/>
+    <circle cx="374" cy="1018" r="5" fill="#f4d89c"/>
+    <circle cx="1196" cy="1020" r="4" fill="#f4d89c"/>
+    <circle cx="1324" cy="1050" r="3" fill="#7eb6b0"/>
+  </g>
+</svg>
