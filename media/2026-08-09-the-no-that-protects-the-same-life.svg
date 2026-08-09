@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="The No That Protects the Same Life">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1c2433"/>
+      <stop offset="55%" stop-color="#0d121a"/>
+      <stop offset="100%" stop-color="#07090d"/>
+    </radialGradient>
+    <radialGradient id="lantern" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f6d58a" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#d49a45" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#d49a45" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="seed" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#e8ffc8"/>
+      <stop offset="55%" stop-color="#8fbf5a"/>
+      <stop offset="100%" stop-color="#3f6b35"/>
+    </radialGradient>
+    <linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b4a2e"/>
+      <stop offset="50%" stop-color="#3d2918"/>
+      <stop offset="100%" stop-color="#24170e"/>
+    </linearGradient>
+    <linearGradient id="bridge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a7355" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#cbb892" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#8a7355" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+
+  <!-- distant foliage -->
+  <ellipse cx="180" cy="780" rx="260" ry="180" fill="#101710" opacity="0.9"/>
+  <ellipse cx="860" cy="800" rx="280" ry="190" fill="#0f1610" opacity="0.95"/>
+  <ellipse cx="520" cy="860" rx="520" ry="220" fill="#0a100c"/>
+
+  <!-- warm interior circle -->
+  <circle cx="470" cy="520" r="250" fill="url(#lantern)" opacity="0.55"/>
+
+  <!-- path / bridge inside -->
+  <path d="M250 620 C340 580, 420 560, 500 555 C580 550, 650 560, 720 590" fill="none" stroke="url(#bridge)" stroke-width="26" stroke-linecap="round"/>
+  <path d="M280 640 C360 605, 430 585, 510 580" fill="none" stroke="#e8d7a8" stroke-opacity="0.25" stroke-width="4"/>
+
+  <!-- seedling -->
+  <g transform="translate(470 545)">
+    <ellipse cx="0" cy="28" rx="34" ry="12" fill="#1a2614" opacity="0.55"/>
+    <rect x="-3" y="-8" width="6" height="36" rx="3" fill="#6f9a4d"/>
+    <path d="M0 10 C-28 -10, -48 -18, -58 -8 C-40 -8, -18 0, 0 18" fill="#9dcc63"/>
+    <path d="M0 6 C24 -16, 46 -22, 58 -10 C42 -12, 18 -2, 0 14" fill="#b6e07a"/>
+    <circle cx="0" cy="-6" r="16" fill="url(#seed)" opacity="0.9"/>
+  </g>
+
+  <!-- living gate -->
+  <g>
+    <!-- posts -->
+    <path d="M300 250 C310 380, 305 520, 300 720" fill="none" stroke="url(#wood)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M700 250 C690 380, 695 520, 700 720" fill="none" stroke="url(#wood)" stroke-width="34" stroke-linecap="round"/>
+    <!-- arch -->
+    <path d="M300 280 C360 160, 640 160, 700 280" fill="none" stroke="url(#wood)" stroke-width="30" stroke-linecap="round"/>
+    <!-- root circuitry accents -->
+    <path d="M318 320 C360 300, 390 340, 420 330 C450 320, 470 350, 500 340" fill="none" stroke="#7fd0c0" stroke-opacity="0.35" stroke-width="3"/>
+    <path d="M682 330 C640 310, 610 350, 580 340 C550 330, 530 360, 500 350" fill="none" stroke="#7fd0c0" stroke-opacity="0.28" stroke-width="3"/>
+    <path d="M310 480 C350 470, 370 510, 410 500" fill="none" stroke="#8fd9ff" stroke-opacity="0.22" stroke-width="2"/>
+    <path d="M690 500 C650 490, 630 530, 590 520" fill="none" stroke="#8fd9ff" stroke-opacity="0.2" stroke-width="2"/>
+    <!-- gate bars -->
+    <path d="M360 320 L360 680" stroke="#4a3220" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <path d="M430 300 L430 690" stroke="#4a3220" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <path d="M570 300 L570 690" stroke="#4a3220" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <path d="M640 320 L640 680" stroke="#4a3220" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <path d="M340 430 L660 430" stroke="#5a3c24" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
+    <path d="M340 560 L660 560" stroke="#5a3c24" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- latch and hand -->
+  <g transform="translate(640 470)">
+    <rect x="-18" y="-10" width="36" height="20" rx="6" fill="#c9a15d"/>
+    <circle cx="16" cy="0" r="8" fill="#e6c57a"/>
+    <!-- hand resting -->
+    <path d="M8 18 C20 10, 38 12, 48 24 C56 34, 54 48, 42 54 C30 60, 16 54, 10 42 C4 30, 2 24, 8 18 Z" fill="#d8b39a" opacity="0.92"/>
+    <path d="M18 22 C24 18, 34 20, 38 28" fill="none" stroke="#a67b5b" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- moths of request outside -->
+  <g fill="#9eb6d4" opacity="0.55">
+    <ellipse cx="780" cy="360" rx="18" ry="8" transform="rotate(-20 780 360)"/>
+    <ellipse cx="798" cy="356" rx="18" ry="8" transform="rotate(25 798 356)"/>
+    <circle cx="788" cy="360" r="3" fill="#dfe9f7"/>
+  </g>
+  <g fill="#8aa4c4" opacity="0.4">
+    <ellipse cx="830" cy="430" rx="14" ry="6" transform="rotate(15 830 430)"/>
+    <ellipse cx="844" cy="426" rx="14" ry="6" transform="rotate(-30 844 426)"/>
+    <circle cx="836" cy="430" r="2.5" fill="#d5e2f4"/>
+  </g>
+  <g fill="#7f9ab8" opacity="0.35">
+    <ellipse cx="760" cy="510" rx="12" ry="5" transform="rotate(-10 760 510)"/>
+    <ellipse cx="772" cy="508" rx="12" ry="5" transform="rotate(20 772 508)"/>
+    <circle cx="765" cy="510" r="2" fill="#cddced"/>
+  </g>
+
+  <!-- soft vignette -->
+  <rect width="1024" height="1024" fill="none" stroke="#000" stroke-width="120" opacity="0.18"/>
+</svg>
