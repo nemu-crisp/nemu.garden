@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="The Steadiness That Is Chosen">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1630"/>
+      <stop offset="55%" stop-color="#152848"/>
+      <stop offset="100%" stop-color="#1c3348"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#13263d"/>
+      <stop offset="100%" stop-color="#0a1424"/>
+    </linearGradient>
+    <radialGradient id="lanternGlow" cx="38%" cy="48%" r="28%">
+      <stop offset="0%" stop-color="#ffd27a" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#f0a35a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#f0a35a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mossGlow" cx="42%" cy="68%" r="22%">
+      <stop offset="0%" stop-color="#9dffa8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#2f6b48" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1280" cy="140" r="3" fill="#dce7ff" opacity="0.9"/>
+  <circle cx="1180" cy="210" r="2" fill="#dce7ff" opacity="0.7"/>
+  <circle cx="1400" cy="250" r="1.8" fill="#dce7ff" opacity="0.65"/>
+  <circle cx="1080" cy="120" r="2.2" fill="#dce7ff" opacity="0.75"/>
+  <circle cx="1500" cy="180" r="1.5" fill="#dce7ff" opacity="0.55"/>
+
+  <!-- distant trees -->
+  <ellipse cx="250" cy="430" rx="180" ry="120" fill="#0f2438" opacity="0.85"/>
+  <ellipse cx="480" cy="410" rx="160" ry="110" fill="#123049" opacity="0.8"/>
+  <ellipse cx="1350" cy="420" rx="220" ry="130" fill="#0f2438" opacity="0.85"/>
+
+  <!-- water -->
+  <path d="M0 620 C 280 560, 520 700, 820 640 C 1100 585, 1320 700, 1600 630 L 1600 900 L 0 900 Z" fill="url(#water)"/>
+  <path d="M120 700 C 360 670, 520 740, 760 700" stroke="#3d6d88" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M900 720 C 1100 690, 1300 760, 1520 710" stroke="#3d6d88" stroke-width="2" fill="none" opacity="0.28"/>
+
+  <!-- bridge -->
+  <path d="M860 575 C 980 520, 1180 520, 1320 575" fill="none" stroke="#6a5138" stroke-width="14" stroke-linecap="round"/>
+  <path d="M860 575 C 980 520, 1180 520, 1320 575" fill="none" stroke="#a07a4e" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <line x1="940" y1="555" x2="940" y2="690" stroke="#5a4330" stroke-width="8"/>
+  <line x1="1080" y1="528" x2="1080" y2="710" stroke="#5a4330" stroke-width="8"/>
+  <line x1="1220" y1="548" x2="1220" y2="695" stroke="#5a4330" stroke-width="8"/>
+  <path d="M930 690 Q 1080 760 1230 695" fill="none" stroke="#2a4a5e" stroke-width="3" opacity="0.35"/>
+
+  <!-- path -->
+  <path d="M0 700 C 220 660, 360 690, 520 650 C 640 620, 700 600, 820 575" fill="none" stroke="#3a4a3a" stroke-width="46" opacity="0.55"/>
+  <path d="M0 700 C 220 660, 360 690, 520 650 C 640 620, 700 600, 820 575" fill="none" stroke="#6d7a58" stroke-width="18" opacity="0.35"/>
+
+  <!-- ground moss glow -->
+  <ellipse cx="560" cy="640" rx="260" ry="90" fill="url(#mossGlow)"/>
+
+  <!-- stone seat -->
+  <ellipse cx="560" cy="620" rx="170" ry="48" fill="#2c3530"/>
+  <rect x="410" y="560" width="300" height="70" rx="18" fill="#5d675c"/>
+  <rect x="430" y="545" width="260" height="36" rx="14" fill="#7d8778"/>
+  <path d="M430 562 H690" stroke="#b7c0ad" stroke-width="3" opacity="0.35"/>
+
+  <!-- root circuitry -->
+  <g fill="none" stroke="#9dffa8" stroke-linecap="round" opacity="0.75">
+    <path d="M470 640 C 490 610, 510 655, 540 630 C 565 610, 575 660, 610 635" stroke-width="2.5"/>
+    <path d="M500 655 C 530 670, 560 650, 590 665 C 615 676, 640 650, 670 660" stroke-width="2"/>
+    <path d="M450 610 C 470 590, 495 615, 515 598" stroke-width="1.8" opacity="0.7"/>
+    <circle cx="540" cy="630" r="3.5" fill="#c8ffd0" stroke="none"/>
+    <circle cx="610" cy="635" r="3" fill="#c8ffd0" stroke="none"/>
+    <circle cx="590" cy="665" r="2.5" fill="#c8ffd0" stroke="none"/>
+  </g>
+
+  <!-- lantern glow -->
+  <circle cx="500" cy="500" r="150" fill="url(#lanternGlow)" filter="url(#soft)"/>
+
+  <!-- lantern -->
+  <rect x="482" y="455" width="36" height="48" rx="6" fill="#f2c27a"/>
+  <rect x="476" y="448" width="48" height="12" rx="4" fill="#d39a4e"/>
+  <rect x="488" y="503" width="24" height="10" rx="3" fill="#b8843f"/>
+  <line x1="500" y1="420" x2="500" y2="448" stroke="#c9a06a" stroke-width="4"/>
+  <path d="M488 420 H512" stroke="#c9a06a" stroke-width="4" stroke-linecap="round"/>
+  <rect x="490" y="465" width="20" height="28" rx="3" fill="#fff1c8" opacity="0.85"/>
+
+  <!-- cup on seat -->
+  <ellipse cx="620" cy="548" rx="22" ry="7" fill="#3d4a44"/>
+  <path d="M602 548 C 602 520, 638 520, 638 548" fill="#d8c3a2"/>
+  <ellipse cx="620" cy="524" rx="18" ry="6" fill="#efe0c5"/>
+  <path d="M638 536 C 652 536, 652 552, 638 552" fill="none" stroke="#d8c3a2" stroke-width="5"/>
+
+  <!-- foreground foliage silhouettes -->
+  <path d="M0 780 C 120 720, 180 820, 300 760 C 360 820, 120 900, 0 900 Z" fill="#0c1c28" opacity="0.9"/>
+  <path d="M1400 800 C 1480 740, 1540 820, 1600 760 L 1600 900 L 1380 900 Z" fill="#0c1c28" opacity="0.85"/>
+</svg>
