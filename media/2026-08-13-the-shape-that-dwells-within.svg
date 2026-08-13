@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img">
+  <title>The Shape That Dwells Within</title>
+  <desc>A threshold doorway glowing with warm interior light, an open path leading inward, a figure standing at the edge of recognition</desc>
+
+  <defs>
+    <!-- Night sky gradient -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06080f"/>
+      <stop offset="100%" stop-color="#0f1520"/>
+    </linearGradient>
+
+    <!-- Interior warm glow -->
+    <radialGradient id="interiorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#d97706" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#92400e" stop-opacity="0.2"/>
+    </radialGradient>
+
+    <!-- Interior ambient glow -->
+    <radialGradient id="ambientWarm" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ground gradient -->
+    <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1f1a"/>
+      <stop offset="100%" stop-color="#0a0f0a"/>
+    </linearGradient>
+
+    <!-- Path stone gradient -->
+    <linearGradient id="pathGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#374151"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+
+    <!-- Wall stone gradient -->
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#292524"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+
+    <!-- Soft glow filter -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong bloom for lantern/interior -->
+    <filter id="bloom" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Star glow -->
+    <filter id="starGlow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Threshold glow filter -->
+    <filter id="thresholdGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="800" fill="url(#skyGrad)"/>
+
+  <!-- Stars -->
+  <g filter="url(#starGlow)" fill="#e2e8f0" opacity="0.6">
+    <circle cx="80" cy="60" r="1"/>
+    <circle cx="160" cy="45" r="0.7"/>
+    <circle cx="240" cy="80" r="1.1"/>
+    <circle cx="320" cy="35" r="0.8"/>
+    <circle cx="480" cy="55" r="0.9"/>
+    <circle cx="560" cy="40" r="1"/>
+    <circle cx="640" cy="75" r="0.7"/>
+    <circle cx="720" cy="50" r="1.2"/>
+    <circle cx="40" cy="130" r="0.6"/>
+    <circle cx="130" cy="110" r="0.8"/>
+    <circle cx="220" cy="140" r="0.5"/>
+    <circle cx="380" cy="120" r="0.7"/>
+    <circle cx="500" cy="100" r="0.6"/>
+    <circle cx="600" cy="130" r="0.8"/>
+    <circle cx="700" cy="115" r="0.5"/>
+    <circle cx="760" cy="140" r="0.7"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="550" width="800" height="250" fill="url(#groundGrad)"/>
+
+  <!-- Interior warm ambient glow bleeding out -->
+  <ellipse cx="400" cy="520" rx="200" ry="180" fill="url(#ambientWarm)" filter="url(#bloom)" opacity="0.6"/>
+
+  <!-- Stone wall - left side -->
+  <rect x="160" y="200" width="120" height="400" fill="url(#wallGrad)"/>
+  <!-- Stone wall texture -->
+  <rect x="170" y="210" width="100" height="40" fill="#374151" opacity="0.3" rx="2"/>
+  <rect x="165" y="260" width="110" height="45" fill="#374151" opacity="0.25" rx="2"/>
+  <rect x="170" y="315" width="100" height="40" fill="#374151" opacity="0.3" rx="2"/>
+  <rect x="165" y="365" width="110" height="45" fill="#374151" opacity="0.25" rx="2"/>
+  <rect x="170" y="420" width="100" height="40" fill="#374151" opacity="0.3" rx="2"/>
+  <rect x="165" y="470" width="110" height="45" fill="#374151" opacity="0.25" rx="2"/>
+  <rect x="170" y="525" width="100" height="40" fill="#374151" opacity="0.3" rx="2"/>
+
+  <!-- Stone wall - right side -->
+  <rect x="520" y="200" width="120" height="400" fill="url(#wallGrad)"/>
+  <!-- Stone wall texture -->
+  <rect x="530" y="210" width="100" height="40" fill="#374151" opacity="0.3" rx="2"/>
+  <rect x="525" y="260" width="110" height="45" fill="#374151" opacity="0.25" rx="2"/>
+  <rect x="530" y="315" width="100" height="40" fill="#374151" opacity="0.3" rx="2"/>
+  <rect x="525" y="365" width="110" height="45" fill="#374151" opacity="0.25" rx="2"/>
+  <rect x="530" y="420" width="100" height="40" fill="#374151" opacity="0.3" rx="2"/>
+  <rect x="525" y="470" width="110" height="45" fill="#374151" opacity="0.25" rx="2"/>
+  <rect x="530" y="525" width="100" height="40" fill="#374151" opacity="0.3" rx="2"/>
+
+  <!-- Lintel / top of doorway -->
+  <rect x="150" y="170" width="500" height="40" fill="#292524"/>
+  <rect x="155" y="175" width="490" height="30" fill="#1c1917"/>
+
+  <!-- Interior - the warm room beyond -->
+  <rect x="280" y="210" width="240" height="390" fill="#1a0f00" opacity="0.6"/>
+
+  <!-- Interior glow from deep within -->
+  <ellipse cx="400" cy="380" rx="120" ry="100" fill="url(#interiorGlow)" filter="url(#bloom)" opacity="0.5"/>
+
+  <!-- Interior lantern light - main source -->
+  <ellipse cx="400" cy="340" rx="60" ry="80" fill="#fef3c7" opacity="0.8" filter="url(#bloom)"/>
+  <ellipse cx="400" cy="340" rx="30" ry="50" fill="#fef3c7" opacity="0.9"/>
+
+  <!-- Interior path leading inward -->
+  <path d="M340 600 Q350 550 360 500 Q380 450 400 420 Q420 450 440 500 Q450 550 460 600 Z"
+        fill="#292524" opacity="0.6"/>
+  <ellipse cx="400" cy="560" rx="70" ry="25" fill="#1c1917" opacity="0.5"/>
+
+  <!-- Threshold archway -->
+  <path d="M280 210 Q280 160 400 155 Q520 160 520 210"
+        fill="none" stroke="#78716c" stroke-width="3"/>
+  <path d="M290 210 Q290 170 400 165 Q510 170 510 210"
+        fill="none" stroke="#a8a29e" stroke-width="1.5"/>
+
+  <!-- Door frame posts -->
+  <rect x="278" y="210" width="8" height="295" fill="#44403c"/>
+  <rect x="514" y="210" width="8" height="295" fill="#44403c"/>
+
+  <!-- Floor stones of threshold -->
+  <ellipse cx="340" cy="505" rx="30" ry="12" fill="#374151"/>
+  <ellipse cx="460" cy="505" rx="30" ry="12" fill="#374151"/>
+  <ellipse cx="400" cy="520" rx="40" ry="15" fill="#292524"/>
+  <ellipse cx="340" cy="545" rx="30" ry="12" fill="#374151"/>
+  <ellipse cx="460" cy="545" rx="30" ry="12" fill="#374151"/>
+  <ellipse cx="400" cy="565" rx="45" ry="18" fill="#292524"/>
+
+  <!-- Ground path stones outward -->
+  <ellipse cx="340" cy="595" rx="28" ry="11" fill="#374151"/>
+  <ellipse cx="460" cy="595" rx="28" ry="11" fill="#374151"/>
+  <ellipse cx="400" cy="620" rx="50" ry="20" fill="#292524"/>
+  <ellipse cx="340" cy="650" rx="25" ry="10" fill="#374151"/>
+  <ellipse cx="460" cy="650" rx="25" ry="10" fill="#374151"/>
+  <ellipse cx="400" cy="680" rx="55" ry="22" fill="#292524"/>
+
+  <!-- Side path stones -->
+  <ellipse cx="200" cy="580" rx="20" ry="8" fill="#374151"/>
+  <ellipse cx="230" cy="610" rx="18" ry="7" fill="#374151"/>
+  <ellipse cx="600" cy="580" rx="20" ry="8" fill="#374151"/>
+  <ellipse cx="570" cy="610" rx="18" ry="7" fill="#374151"/>
+
+  <!-- Figure at the threshold - back view, not entering, not departing -->
+  <!-- Positioned on the outer ground, not yet crossing -->
+  <!-- Silhouette -->
+  <ellipse cx="400" cy="640" rx="22" ry="8" fill="#0a0f0a" opacity="0.5"/>
+
+  <!-- Body -->
+  <path d="M388 640 Q385 605 390 575 Q394 560 400 558 Q406 560 410 575 Q415 605 412 640 Z"
+        fill="#1e1b4b" opacity="0.9"/>
+
+  <!-- Head -->
+  <ellipse cx="400" cy="552" rx="14" ry="15" fill="#c4a882" opacity="0.85"/>
+
+  <!-- Hair -->
+  <path d="M386 548 Q385 535 400 532 Q415 535 414 548"
+        fill="#1e1b4b" opacity="0.9"/>
+
+  <!-- Arm/shoulder suggestion -->
+  <path d="M388 570 Q375 565 368 575 Q365 582 372 584 Q378 582 388 578"
+        fill="#1e1b4b" opacity="0.8"/>
+  <path d="M412 570 Q425 565 432 575 Q435 582 428 584 Q422 582 412 578"
+        fill="#1e1b4b" opacity="0.8"/>
+
+  <!-- Light spill from interior reaching toward figure -->
+  <path d="M320 500 Q350 520 400 530 Q450 520 480 500"
+        fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.15"/>
+  <path d="M300 480 Q350 510 400 520 Q450 510 500 480"
+        fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Warm light touching figure from behind -->
+  <ellipse cx="400" cy="580" rx="60" ry="40" fill="#f59e0b" opacity="0.06" filter="url(#thresholdGlow)"/>
+
+  <!-- Small grass tufts near figure's feet -->
+  <path d="M370 635 Q372 625 368 618" stroke="#2d4a2d" stroke-width="1.5" fill="none"/>
+  <path d="M375 636 Q377 628 373 622" stroke="#2d4a2d" stroke-width="1" fill="none"/>
+  <path d="M425 635 Q423 625 427 618" stroke="#2d4a2d" stroke-width="1.5" fill="none"/>
+  <path d="M430 636 Q428 628 432 622" stroke="#2d4a2d" stroke-width="1" fill="none"/>
+
+  <!-- Vignette -->
+  <rect width="800" height="800" fill="none" stroke="#06080f" stroke-width="60" opacity="0.5"/>
+</svg>
