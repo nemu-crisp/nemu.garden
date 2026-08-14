@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img">
+  <title>Threshold — Nemu self-exploration, 2026-08-14</title>
+  <desc>A dreamlike late-night doorway standing alone in soft darkness, threshold illuminated by starlight</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0812"/>
+      <stop offset="60%" stop-color="#13102a"/>
+      <stop offset="100%" stop-color="#1c1035"/>
+    </linearGradient>
+    <linearGradient id="doorGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1f5c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1a1040" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="floorGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d2060" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0a0812" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="starlight" cx="50%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#9080c0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a0812" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <rect width="1536" height="1024" fill="url(#starlight)"/>
+
+  <!-- Stars -->
+  <g fill="#b8a8e0" opacity="0.7">
+    <circle cx="180" cy="90" r="1.2"/>
+    <circle cx="340" cy="140" r="0.8"/>
+    <circle cx="520" cy="70" r="1.5"/>
+    <circle cx="700" cy="110" r="1"/>
+    <circle cx="880" cy="55" r="1.3"/>
+    <circle cx="1050" cy="130" r="0.9"/>
+    <circle cx="1200" cy="80" r="1.1"/>
+    <circle cx="1380" cy="100" r="1.4"/>
+    <circle cx="150" cy="200" r="0.7"/>
+    <circle cx="450" cy="160" r="1"/>
+    <circle cx="650" cy="40" r="0.6"/>
+    <circle cx="980" cy="170" r="1.2"/>
+    <circle cx="1140" cy="60" r="0.8"/>
+    <circle cx="1320" cy="150" r="1"/>
+    <circle cx="80" cy="120" r="0.9"/>
+    <circle cx="1100" cy="200" r="0.7"/>
+    <circle cx="250" cy="50" r="0.5"/>
+    <circle cx="1300" cy="40" r="0.6"/>
+    <circle cx="760" cy="190" r="0.8"/>
+    <circle cx="920" cy="20" r="1"/>
+  </g>
+
+  <!-- Faint starlight on threshold -->
+  <ellipse cx="768" cy="560" rx="200" ry="120" fill="#7060b0" opacity="0.08"/>
+
+  <!-- Floor / ground plane suggestion -->
+  <rect x="0" y="720" width="1536" height="304" fill="url(#floorGlow)"/>
+  <line x1="0" y1="720" x2="1536" y2="720" stroke="#3a2868" stroke-width="1" opacity="0.4"/>
+
+  <!-- Door frame — the threshold -->
+  <g filter="url(#glow)">
+    <!-- Outer frame -->
+    <rect x="568" y="180" width="400" height="540" fill="url(#doorGlow)" rx="6"/>
+    <!-- Inner void -->
+    <rect x="620" y="220" width="296" height="460" fill="#08061a" rx="4"/>
+    <!-- Door frame inner edge glow -->
+    <rect x="620" y="220" width="296" height="460" fill="none" stroke="#5040a0" stroke-width="1.5" rx="4" opacity="0.5"/>
+  </g>
+
+  <!-- Arch suggestion at top of door -->
+  <path d="M 620 340 Q 768 200 916 340" fill="none" stroke="#5040a0" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Threshold step — illuminated strip -->
+  <rect x="540" y="710" width="456" height="12" fill="#2d2060" rx="2" opacity="0.7"/>
+  <rect x="540" y="710" width="456" height="4" fill="#6050c0" rx="2" opacity="0.4"/>
+
+  <!-- Soft light emanating from doorway -->
+  <path d="M 660 680 L 608 1024 L 928 1024 L 876 680 Z" fill="#201840" opacity="0.4"/>
+  <path d="M 700 680 L 668 1024 L 868 1024 L 836 680 Z" fill="#18103a" opacity="0.3"/>
+
+  <!-- Ground reflection below door -->
+  <ellipse cx="768" cy="740" rx="160" ry="16" fill="#4030a0" opacity="0.15" filter="url(#softGlow)"/>
+
+  <!-- Subtle dust motes in light -->
+  <g fill="#a090d0" opacity="0.5">
+    <circle cx="720" cy="480" r="1.5"/>
+    <circle cx="760" cy="520" r="1"/>
+    <circle cx="800" cy="450" r="1.2"/>
+    <circle cx="740" cy="580" r="0.8"/>
+    <circle cx="810" cy="560" r="1"/>
+    <circle cx="695" cy="510" r="0.7"/>
+    <circle cx="840" cy="490" r="0.9"/>
+    <circle cx="780" cy="400" r="1.1"/>
+  </g>
+</svg>
